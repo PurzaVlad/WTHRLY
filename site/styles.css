@@ -1,0 +1,121 @@
+    body{
+        font-family: 'League spartan', sans-serif;
+        color:#041B15;
+    }
+
+    .wmare {
+        background-image: url('https://raw.githubusercontent.com/PurzaVlad/WTHRLY/207dec51a65c59a84b274b8fc0dfff9d4f7cf7ea/stg2.svg');
+        background-repeat: no-repeat;
+    }
+
+    i {
+        color: #041B15;
+    }
+
+    .custom-input {
+        height:40px;
+        font-size: 20px;
+        position: relative !important;
+    }
+
+    .custom-input::placeholder {
+        color:gray ; /* Custom placeholder color */
+        position: relative !important;
+    }
+
+    .btn-custom {
+        background-color: transparent;
+        border: 0px;
+        padding: 0;
+        height:1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-custom .bi-person-fill {
+        display: none;
+    }
+
+    .btn-custom:hover .bi-person {
+        display: none;
+    }
+
+    .btn-custom:hover .bi-person-fill {
+        transition-property: sliding-vertically;
+        display: inline;
+        color:#041B15;
+    }
+
+    .rectangle-custom {
+        height:250px;
+        width:200px;
+        background-color:#ffffff;
+        border-radius: 12px;
+        border: none;
+    }
+
+    .rectangle-custom:hover {
+        background-color:#041B15;
+        color:white;
+
+    }
+
+    .rectangle-custom #info {
+        display:none;
+        color:white;
+    }
+
+    .rectangle-custom:hover #info {
+        transition-property: sliding-vertically;
+        display:inline;
+        color:white;
+    }
+
+    .rectangle-custom .bi-geo-alt-fill{
+        display:none;
+    }
+
+    .rectangle-custom:hover .bi-geo-alt{
+
+        display:none;
+    }
+
+    .rectangle-custom:hover .bi-geo-alt-fill{
+        transition-property: sliding-vertically;
+        display: inline;
+        color:white;;
+    }
+
+    .form-control:focus, .btn:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .dropdown-custom {
+        padding:0;
+        border-radius: 12px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color:#EDECE8;
+        border-radius: 12px;
+    }
+
+    .bigrectangle-custom {
+        height:800px;
+        background-color:#EDECE8;
+        border-radius: 12px;
+        border: none;
+        display:inline;
+    }
+
+    .smallrectangle-custom {
+        height:50px;
+        width:200px;
+        background-color:#041B15;
+        color:#ffffff;
+        border-radius: 12px;
+        border: none;
+        transform: translateY(50%);
+    }
