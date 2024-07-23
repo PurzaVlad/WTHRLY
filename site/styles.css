@@ -1,4 +1,13 @@
-    body{
+    header {
+        background-color: #ffffff;
+    }
+
+    .rectangle-wrapper {
+        text-decoration: none;
+        color: inherit;
+      }
+
+    body {
         font-family: 'League spartan', sans-serif;
         color:#041B15;
     }
@@ -6,6 +15,9 @@
     .wmare {
         background-image: url('https://raw.githubusercontent.com/PurzaVlad/WTHRLY/207dec51a65c59a84b274b8fc0dfff9d4f7cf7ea/stg2.svg');
         background-repeat: no-repeat;
+        z-index: 1;
+        display: flex;
+
     }
 
     i {
@@ -82,14 +94,18 @@
     }
 
     .rectangle-custom:hover .bi-geo-alt-fill{
-        transition-property: sliding-vertically;
         display: inline;
-        color:white;;
+        color:white;
+    }
+
+    .form-control {
+        border-radius: 12px;
     }
 
     .form-control:focus, .btn:focus {
         outline: none;
         box-shadow: none;
+        border-radius: 12px;
     }
 
     .dropdown-custom {
@@ -100,14 +116,6 @@
     .dropdown-menu .dropdown-item:hover {
         background-color:#EDECE8;
         border-radius: 12px;
-    }
-
-    .bigrectangle-custom {
-        height:800px;
-        background-color:#EDECE8;
-        border-radius: 12px;
-        border: none;
-        display:inline;
     }
 
     .smallrectangle-custom {
