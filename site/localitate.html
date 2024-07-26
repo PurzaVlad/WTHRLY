@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Timisoara-Wthrly</title>
+    <title>timisoara-wthrly</title>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
 
     <header class="d-flex align-items-center justify-content-center shadow-sm">
       <div class="col-7 d-flex p-2 align-items-center justify-content-between">
-        <a href="weatherly.html"><img src="https://raw.githubusercontent.com/PurzaVlad/WTHRLY/748f019ac1b6b53cb96a1be0fb891052391a482b/wthrly.svg" style="height:55px;width:auto;filter:saturate(4);"></a>
+        <a href="{% url 'wthrlyapp:index'%}"><img src="https://raw.githubusercontent.com/PurzaVlad/WTHRLY/main/wthr.jpg" style="height:55px;width:auto;filter:saturate(4);"></a>
         <div class="dropdown">
           <button class="btn btn-custom mt-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             <h2><i class="bi bi-person"></i></h2>
@@ -26,11 +27,11 @@
       </div>
     </header>
 
-    <div class="d-flex my-5 p-2 align-items-center justify-content-center">
-      <div class="d-flex col-7 my-5 align-items-center justify-content-between">
+    <div class="d-flex my-5 align-items-center justify-content-center">
+      <div class="d-flex col-7 my-5 p-2 align-items-center justify-content-between">
         <div class="d-flex col-3 align-items-center justify-content-start">
           <div class="d-flex align-items-center justify-content-center flex-column">
-            <h1>Timisoara</h1>
+            <h1>{{ orase }}</h1>
             <h1><i class="bi bi-cloud-drizzle"></i> 304</h1>
           </div>
           <div class="d-flex p-1 px-3 align-items-center justify-content-center flex-column">
@@ -47,7 +48,7 @@
       </div>
     </div>
 
-    <div class="d-flex my-5 p-2 align-items-center justify-content-center">
+    <div class="d-flex my-5 p-2 align-items-center justify-content-center" >
       <div class="d-flex col-7 my-5 flex-column justify-content-start">
 
         <div class="d-flex align-items-center justify-content-start">
@@ -57,31 +58,50 @@
         <div class="d-flex  align-items-center justify-content-start">
           <div class="d-flex  align-items-center justify-content-center flex-column">
             <h2 class="px-3">10:30</h2>
-            <h2 class="px-3"><i class="bi bi-0-square-fill"></i></h2>
+            <div class="d-flex  align-items-center justify-content-center">
+              <h2><i class="bi bi-cloud-drizzle"></i></h2>
+              <h5>15%</h5>
+              <h2 class="px-3">15°</h2>
+            </div>
           </div>
           <div class="d-flex  align-items-center justify-content-center flex-column">
-            <h2 class="px-3">10:30</h2>
-            <h2 class="px-3"><i class="bi bi-0-square-fill"></i></h2>
+            <h2 class="px-3">11:30</h2>
+            <h2 class="px-3"><i class="bi bi-cloud-drizzle"></i></h2>
           </div>
           <div class="d-flex  align-items-center justify-content-center flex-column">
-            <h2 class="px-3">10:30</h2>
-            <h2 class="px-3"><i class="bi bi-0-square-fill"></i></h2>
+            <h2 class="px-3">12:30</h2>
+            <h2 class="px-3"><i class="bi bi-cloud-drizzle"></i></h2>
           </div>
           <div class="d-flex  align-items-center justify-content-center flex-column">
-            <h2 class="px-3">10:30</h2>
-            <h2 class="px-3"><i class="bi bi-0-square-fill"></i></h2>
+            <h2 class="px-3">13:30</h2>
+            <h2 class="px-3"><i class="bi bi-cloud-drizzle"></i></h2>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="d-flex my-5 align-items-center justify-content-center">
-      <div class="d-flex col-7 my-5 align-items-center justify-content-between" style="background-color:blue">
-          <h1>Precipitaion</h1>
-          <h1>timisoara</h1>
-          <h1>Precipitaion</h1>
-        </div>
+    <div class="d-flex align-items-center justify-content-center wmare" style="background-color:#CFF0F2">
+      <div class="d-flex col-7 align-items-center justify-content-center ">
+
+        <ul class="col-4 lista">
+          <li class="list-group-item"><h1>10-Day Forecast</h1></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+          <li class="list-group-item"><h3 class="d-flex align-items-center justify-content-between">An item<i class="bi bi-cloud-drizzle ps-5"></i>20°</h3></li>
+        </ul>
+
+          <div class="d-flex ps-5 col-8 align-items-center justify-content-start">
+            <h1>precip</h1>
+          </div>
       </div>
     </div>
 
