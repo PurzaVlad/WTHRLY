@@ -101,8 +101,20 @@
         color:white;
     }
 
-    form {
-        border-radius: 12px;
+    form input,
+    form select,
+    form textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    }
+    
+    /* Style form labels */
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
     }
 
     form:focus, .btn:focus {
