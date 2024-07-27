@@ -101,23 +101,7 @@
         color:white;
     }
 
-    form input,
-    form select,
-    form textarea {
-    border: 5px solid #ccc;
-    padding: 8px;
-    margin-bottom: 10px;
-    font-size: 25px;
-    }
-    
-    /* Style form labels */
-    .form1 label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .form1:focus, .btn:focus {
+    form:focus, .btn:focus {
         outline: none;
         box-shadow: none;
         border-radius: 12px;
