@@ -111,13 +111,13 @@
     }
     
     /* Style form labels */
-    form label {
+    .form1 label {
         display: block;
         margin-bottom: 5px;
         font-weight: bold;
     }
 
-    form:focus, .btn:focus {
+    .form1:focus, .btn:focus {
         outline: none;
         box-shadow: none;
         border-radius: 12px;
