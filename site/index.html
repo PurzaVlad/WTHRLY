@@ -27,9 +27,9 @@
     </header>
 
     <div class="d-flex align-items-center p-5 justify-content-center" style="height:400px;background-image: url('https://raw.githubusercontent.com/PurzaVlad/WTHRLY/165dce603739902140c74c553c2ebc1cef30ee0e/jos.svg');">
-        <form class="col-3" method="get">
+        <form  class="col-3" action="{% url 'wthrlyapp:index' %}" method="get">
           {% csrf_token %}
-          <input class="form-control custom-input" type="text" placeholder="Search your city">
+          {{ form }}
         </form>
     </div>
 
