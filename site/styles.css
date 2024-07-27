@@ -101,11 +101,11 @@
         color:white;
     }
 
-    .form-control {
+    form {
         border-radius: 12px;
     }
 
-    .form-control:focus, .btn:focus {
+    form:focus, .btn:focus {
         outline: none;
         box-shadow: none;
         border-radius: 12px;
