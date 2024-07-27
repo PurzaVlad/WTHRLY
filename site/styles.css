@@ -104,10 +104,10 @@
     form input,
     form select,
     form textarea {
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     padding: 8px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 25px;
     }
     
     /* Style form labels */
