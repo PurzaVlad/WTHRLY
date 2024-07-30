@@ -72,7 +72,6 @@
     .btn-custom:hover .bi-star-fill {
         display: inline;
         color: #1A5E63;
-        transition: color 0.3s ease;
     }
 
     .rectangle-custom {
