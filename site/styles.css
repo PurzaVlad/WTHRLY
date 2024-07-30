@@ -62,6 +62,20 @@
         color:#1A5E63;
     }
 
+    .btn-custom .bi-star-fill {
+        display: none;
+    }
+
+    .btn-custom:hover .bi-star {
+        display: none;
+    }
+
+    .btn-custom:hover .bi-star-fill {
+        transition-property: sliding-vertically;
+        display: inline;
+        color:#1A5E63;
+    }
+
     .rectangle-custom {
         height:250px;
         width:200px;
