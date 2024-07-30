@@ -48,15 +48,15 @@
         justify-content: center;
     }
 
-    .btn-custom .bi-person-fill .bi-star-fill {
+    .btn-custom .bi-person-fill .bi-star-fill{
         display: none;
     }
 
-    .btn-custom:hover .bi-person .bi-star {
+    .btn-custom:hover .bi-person .bi-star{
         display: none;
     }
 
-    .btn-custom:hover .bi-person-fill .bi-star-fill {
+    .btn-custom:hover .bi-person-fill .bi-star-fill{
         transition-property: sliding-vertically;
         display: inline;
         color:#1A5E63;
@@ -99,6 +99,10 @@
     .rectangle-custom:hover .bi-geo-alt-fill{
         display: inline;
         color:white;
+    }
+
+    form{
+        border-radius: 12px;
     }
 
     form:focus, .btn:focus {
