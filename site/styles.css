@@ -48,31 +48,20 @@
         justify-content: center;
     }
 
-    .btn-custom .bi-person-fill {
-        display: none;
-    }
-
-    .btn-custom:hover .bi-person {
-        display: none;
-    }
-
-    .btn-custom:hover .bi-person-fill {
-        display: inline;
-        color:#1A5E63;
-    }
-
+    .btn-custom .bi-person-fill, 
     .btn-custom .bi-star-fill {
         display: none;
     }
-
+    
+    .btn-custom:hover .bi-person,
     .btn-custom:hover .bi-star {
         display: none;
     }
-
+    
+    .btn-custom:hover .bi-person-fill,
     .btn-custom:hover .bi-star-fill {
         display: inline;
-        color: #1A5E63;
-    }
+        color: #1A5E
 
     .rectangle-custom {
         height:250px;
